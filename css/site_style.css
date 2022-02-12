@@ -5,32 +5,36 @@
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
-  font-size: 1vw;
-  min-height: 8vh;
-}
-
-.logo {
-  color: white;
-  display: flex;
-  align-items: left;
+  min-height: 100px;
+  position: fixed;
+  width: 100%;
 }
 
 ul {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-size: x-large;
 }
 
 li {
-  list-style-type: none;
+  float: left;
 }
 
-a {
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding:  16px;
   text-decoration: none;
-  letter-spacing: 2px;
+}
+
+li a:hover {
+  background-color: gray;
+}
+
+.activeLink {
+  text-decoration: underline;
 }
