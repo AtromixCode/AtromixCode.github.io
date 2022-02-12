@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  font-size: 1vw;
+  min-height: 8vh;
+}
+
+.logo {
+  color: white;
+  display: flex;
+  align-items: left;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
