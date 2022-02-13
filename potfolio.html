@@ -2,17 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/site_style.css" />
-    <title>Assignment 1</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a class="activeLink" href="potfolio.html">Portfolio</a></li>
+        <li><a class="active-link" href="potfolio.html">Portfolio</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="aboutMe.html">About me</a></li>
       </ul>
     </nav>
+
+    <div class="content">
+      <div style="margin-bottom: 20px;">
+        <h1>
+          Awesome Projects I've been a part of
+        </h1>
+        <br>
+        <p>
+          This simple a simple list of projects that I have done during my time at the University of Calgary. <u>NOTE</u> if you click on a demo or Github link, it will be impossible to come back to this page unless you use the back button. 
+          This is not covered by the "impossible to get stuck" since you are accessing an external site and will no longer be in this site. The demo links are there to be more realistic about the protfolio.
+        </p>
+        <br>
+        <div style="display: flex; justify-content: center;">
+        <table class="nice-table">
+          <tr>
+            <th>Project name</th>
+            <th>Project Description</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Goodness giveaway</td>
+            <td>A current project that I am working on with my capstone group. It is a web application used by the public to decide what charities get a donation from
+               a company or an individual. It is being built with Vue in the front-end and Spring in the back-end. I mainly work as a front-end and QA developer. This project allowed me
+              to work with Vue.js for the first time and realize it's advantages comapared to React</td>
+            <td><a href="https://demo.goodnessgiveaway.org">Demo</a></td>
+          </tr>
+          <tr>
+            <td>Out to Lunch</td>
+            <td>A web application based social network where users can go and rate different restaurants. It was built using React on the front-end and DJango in the back-end. I learned how DJango
+              worked and how to code in Python.
+            </td>
+            <td><a href="https://github.com/TopazJ/OutToLunch">Github Repo</a></td>
+          </tr>
+          <tr>
+            <td>Stonks</td>
+            <td>A web application used to trade stocks (or Stonks). Again, DJango and React were used to create the application.</td>
+            <td><a href="https://github.com/TopazJ/Stonks">Github Repo</a></td>
+          </tr>
+        </table>
+      </div>
+      </div>
+      <br>
+      <p>Here is a picture of my latest project that I took part in:</p>
+      <br>
+      <div class="columns" style="justify-content: center;">
+        <img src="assets/portfolio-picture.jpg" style="width: 60%;"/>
+      </div>
+    </div>
   </body>
 </html>

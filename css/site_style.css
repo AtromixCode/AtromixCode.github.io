@@ -2,48 +2,158 @@
   margin: 0px;
   padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #F2EBE5;
 }
 
 body{
-  background-color: rgb(50, 96, 139); 
+  background-color: #2b262d; 
+  display: flex;
+  justify-content: center;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(44, 80, 114);
-  font-size: 1vw;
+  background-color: #2b262d;
+  position: fixed;
+  width: 100%;
+  
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: none;
-  font-size: x-large;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
 }
 
-li {
-  float: left;
-}
-
-li a {
+nav li a {
   display: block;
-  color: white;
   text-align: center;
-  padding:  16px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px;
   text-decoration: none;
   letter-spacing: 3px;
 }
 
-li a:hover {
+nav li a:hover {
   text-decoration: underline;
 }
 
-.activeLink {
-  background-color: rgb(50, 96, 139);
+img{
+  border-radius: 10px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.active-link {
+  background-color: #9F496E;
+}
+
+.content{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #647295;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.columns{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn{
+  background-color: #9F496E;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+@media (min-width: 480px) and (max-width: 750px) {
+  nav ul {
+    font-size: 3vw;
+  }
+
+  nav li a {
+    padding: 2vw;
+  }
+
+  .columns{
+    flex-direction: column;
+  }
+  .nice-table{
+    width: 100% !important;
+  }
+
+  img{
+    width: 100% !important;
+    margin-top: 10px;
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 479px) {
+  nav ul {
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  nav li a {
+    padding: 5px;
+  }
+  .nice-table{
+    width: 100% !important;
+  }
+  .columns{
+    flex-direction: column;
+  }
+  img{
+    width: 100% !important;
+    margin-top: 10px;
+  }
+}
+
+.nice-table{
+  border-collapse: collapse;
+  width: 60%;
+  display: flex;
+  justify-self: center;
+  margin: 20px;
+}
+
+.nice-table th {
+  background-color: #9F496E;
+  color: white;
+}
+
+.nice-table th,td{
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.nice-list{
+  list-style: disc;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.nice-list li{
+  padding-bottom: 5px;
+}
+.simple-table th{
+  background-color: none;
 }
