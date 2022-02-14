@@ -1,16 +1,20 @@
+/* Sets the margin, padding and font for all classes as well as the font color */
 * {
   margin: 0px;
   padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #F2EBE5;
+  color: #f2ebe5;
 }
 
-body{
-  background-color: #2b262d; 
+/* Changes the color of the body as well as set the body components to be centered */
+body {
+  background-color: #2b262d;
   display: flex;
   justify-content: center;
 }
 
+/* Set the nav component to have the items in the middle and justify the content to have space around 
+each link */
 nav {
   display: flex;
   justify-content: space-around;
@@ -18,9 +22,9 @@ nav {
   background-color: #2b262d;
   position: fixed;
   width: 100%;
-  
 }
 
+/* Change the unordered list to have no style, no padding, and no background */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -32,6 +36,8 @@ nav ul {
   font-size: 20px;
 }
 
+/* Change the style for the links in the nav bar */
+
 nav li a {
   display: block;
   text-align: center;
@@ -40,23 +46,30 @@ nav li a {
   letter-spacing: 3px;
 }
 
+/* Make the text be underlined if hovered with a mouse */
+
 nav li a:hover {
   text-decoration: underline;
 }
+/* Sets the default styling of all images to have rounded corners */
 
-img{
+img {
   border-radius: 10px;
 }
 
-p{
+/* sets the defalt font-size for paragraphs */
+
+p {
   font-size: 20px;
 }
 
+/* a cusont class for the active page in the nav bar */
 .active-link {
-  background-color: #9F496E;
+  background-color: #9f496e;
 }
 
-.content{
+/* custom class for the content styling in each page */
+.content {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -69,19 +82,13 @@ p{
   padding: 20px;
 }
 
-.columns{
+/* custom class to use for creating columns easier */
+.columns {
   display: flex;
   flex-direction: row;
 }
 
-.btn{
-  background-color: #9F496E;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-}
-
+/* Mobile friendly class changes in order to have better scaling */
 @media (min-width: 480px) and (max-width: 750px) {
   nav ul {
     font-size: 3vw;
@@ -91,20 +98,20 @@ p{
     padding: 2vw;
   }
 
-  .columns{
+  .columns {
     flex-direction: column;
   }
-  .nice-table{
+  .nice-table {
     width: 100% !important;
   }
 
-  img{
+  img {
     width: 100% !important;
     margin-top: 10px;
   }
-
 }
 
+/* formating for the smaller devices */
 @media (min-width: 0px) and (max-width: 479px) {
   nav ul {
     font-size: 14px;
@@ -114,19 +121,20 @@ p{
   nav li a {
     padding: 5px;
   }
-  .nice-table{
+  .nice-table {
     width: 100% !important;
   }
-  .columns{
+  .columns {
     flex-direction: column;
   }
-  img{
+  img {
     width: 100% !important;
     margin-top: 10px;
   }
 }
 
-.nice-table{
+/* custom class for tables used in the website */
+.nice-table {
   border-collapse: collapse;
   width: 60%;
   display: flex;
@@ -134,26 +142,33 @@ p{
   margin: 20px;
 }
 
+/* heading changes for the tables in the website */
 .nice-table th {
-  background-color: #9F496E;
+  background-color: #9f496e;
   color: white;
 }
 
-.nice-table th,td{
+/* Changes to both the header and the  */
+.nice-table th,
+td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
-.nice-list{
+/* custom class for changes to the lists of the website */
+.nice-list {
   list-style: disc;
   font-size: 20px;
   margin: 20px;
 }
 
-.nice-list li{
+/* custom class for the list itmes for the lists of the website */
+.nice-list li {
   padding-bottom: 5px;
 }
-.simple-table th{
+
+/* small custom class for a simpler table header */
+.simple-table th {
   background-color: none;
 }
